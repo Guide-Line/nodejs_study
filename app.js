@@ -13,6 +13,7 @@ app.get('/' , function(req , res){
 	res.send('Hello home page!'); // res에는 send 라는 함수가 정의되어있다.
 }); 
 
+//http://localhost:3000/route
 app.get("/route" , function(req, res){
 	res.send('Hello Router, <img src="/sample.png">')
 })
