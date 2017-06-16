@@ -1,0 +1,22 @@
+{
+  "name": "nodejs_study",
+  "version": "1.0.0",
+  "description": "-목록",
+  "main": "sync_async.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guide-Line/nodejs_study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guide-Line/nodejs_study/issues"
+  },
+  "homepage": "https://github.com/Guide-Line/nodejs_study#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
