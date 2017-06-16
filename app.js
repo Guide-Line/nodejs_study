@@ -2,6 +2,7 @@
 
 var express = require('express');
 var app = express();
+app.use(express.static('public')); // public 이라는 디렉토리에 정적인 파일을 위치시키면 그 정적인 파일을 사용자에게 서비스 할수있다.
 
 //  get 방식  : 주소를 쳐서 홈페이지에 들어오는 방식
 //http://localhost:3000
@@ -12,6 +13,9 @@ app.get('/' , function(req , res){
 	res.send('Hello home page!'); // res에는 send 라는 함수가 정의되어있다.
 }); 
 
+app.get("/route" , function(req, res){
+	res.send('Hello Router, <img src="/sample.png">')
+})
 
 //http://localhost:3000/login
 app.get('/login' , function(req , res){
