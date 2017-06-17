@@ -13,6 +13,33 @@ app.get('/' , function(req , res){
 	res.send('Hello home page!'); // res에는 send 라는 함수가 정의되어있다.
 }); 
 
+app.get('/dynamic' , function(req , res){
+    
+    var lis ='';  
+    var time = Date();
+    for(var i=0; i<5; i++){
+        lis = lis + '<li>coding</li>'
+    };
+    var output = `
+        <!doctype html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Untitled Document</title>
+        </head>
+        <body>
+            hello dynmic!
+            <ul>
+            ${lis}
+            </ul>
+        </body>
+
+        ${time}
+
+        </html>`
+    res.send(output)
+})
+
 //http://localhost:3000/route
 app.get("/route" , function(req, res){
 	res.send('Hello Router, <img src="/sample.png">')
