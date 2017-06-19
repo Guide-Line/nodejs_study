@@ -1,0 +1,2 @@
+npm install supervisor -g
+
