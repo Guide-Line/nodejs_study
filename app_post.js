@@ -40,12 +40,13 @@ app.get('/form' , function(req, res){
 	코드 작성후 req.body 로 접근하여 값을 알아낼수있다.
 */
 
+//하나의 라우터
 app.get('/form_receiver' , function (req, res){
 	var title = req.query.title;
 	var description = req.query.description;
 	res.send(title + ' , ' + description)
 })
-
+//하나의 라우터
 app.post('/form_receiver' , function (req, res){
 	var title = req.body.title;
 	var description = req.body.description;
