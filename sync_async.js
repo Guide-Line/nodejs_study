@@ -9,4 +9,4 @@ console.log(2);
 
 fs.readFile('data.txt' ,{encoding :'utf8'} , function(err , data){
     console.log(data);
-})
+});
